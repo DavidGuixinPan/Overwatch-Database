@@ -1,0 +1,155 @@
+html {
+    scrollbar-color: #212121 #d3d3d3;
+}
+
+body {
+    background-color: #212121;
+    color: #808080;
+}
+
+/* Layout */
+.title {
+    text-align: center;
+    color: white;
+}
+
+#playerContainer,
+#mapContainer,
+#container {
+    display: flex;
+    align-items: stretch;
+    border-width: 4px;
+    border-style: dashed;
+    border-radius: 10px;
+    color: white;
+}
+
+#mapListSide,
+#leftSide {
+    padding: 20px;
+    width: 300px;
+    line-height: 35px;
+    border-right-style: solid;
+}
+
+#playerInfoSide,
+#mapInfoSide,
+#rightSide {
+    padding: 20px;
+    border-width: 5px;
+    border-radius: 10px;
+    line-height: 25px;
+    flex: 1;
+}
+
+/* Section */
+
+.navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+#mapsSection,
+#playerSection {
+    display: none;
+}
+
+#heroesButton,
+#mapsButton,
+#playerButton {
+    font-size: large;
+    padding: 5px;
+}
+
+#playerSearch,
+#mapSearch,
+#search,
+#randomHero,
+#mapList,
+#heroList {
+    margin-bottom: 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#playerInfoSide,
+#mapInfoSide,
+#heroInfo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Forms */
+#mapSearchForm,
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Hero Info */
+#mapName,
+#heroName {
+    text-align: center;
+}
+
+#heroPortrait {
+    display: none;
+    width: 220px;
+    border-radius: 10px;
+}
+
+#mapGamemodes,
+#heroGamemodes {
+    white-space: pre-line;
+}
+
+#abilities {
+    white-space: pre-line;
+}
+
+.abilityIcon {
+    width: 80px;
+}
+
+#minorPerks {
+    white-space: pre-line;
+}
+
+#majorPerks {
+    white-space: pre-line;
+}
+
+#heroNotFound,
+#mapNotFound {
+    color: red;
+}
+
+/* Hero List */
+#allHeroes {
+    height: 250px;
+    overflow-y: auto;
+    list-style: none;
+    cursor: pointer;
+}
+
+li {
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.2s;
+}
+
+li:hover {
+    background-color: #3a3a3a;
+}
+
+.gray-box {
+    background-color: #d3d3d3;
+}
+
+#mapImage {
+    width: 600px;
+}

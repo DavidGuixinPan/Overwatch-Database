@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overwatch Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Overwatch Database</h1>
+
+    <div class="navi">
+    <input type="button" id="heroesButton" class="gray-box" value="Heroes">
+    <input type="button" id="mapsButton" class="gray-box" value="Maps">
+    </div>
+    
+    <section id="heroesSection">
+    <h2 class="title">Hero Gallery</h2>
+    <div id="container">
+        <div id="leftSide">
+            <div id="searchSection">
+                <form>
+                <h3 for="heroSearch">Search a Hero:</h3>
+                    <input type="text" id="heroSearch" class="gray-box">
+                    <input type="submit" id="search" class="gray-box" value="Search">
+                </form>
+            </div>
+
+            <div id="randomHero">
+                <h3>Random Hero</h3>
+                <input type="button" id="heroRandomize" class="gray-box" value="Randomize Hero!">
+            </div>
+
+            <div id="heroList">
+                <h3>Hero List</h3>
+                <input type="button" id="all" class="gray-box" value="All">
+                <input type="button" id="tank" class="gray-box" value="Tank">
+                <input type="button" id="damage" class="gray-box" value="Damage">
+                <input type="button" id="support" class="gray-box" value="Support">
+                <ul id="heroes"></ul>
+            </div>
+        </div>
+
+        <div id="rightSide">
+            <div id="heroInfo">
+            <h3>Hero Information</h3>
+                <h4 id="heroName">Search for a hero!</h4>
+                <p id="heroNotFound"></p>
+                <p id="heroRole"></p>
+                <p id="heroSubRole"></p>
+                <p id="heroGamemodes"></p>
+                <a id="heroPortraitLink" href="#" target="_blank" rel="noopener noreferrer">
+                    <img id="heroPortrait" alt="Hero Portrait" title="Click here for zoomed image"></img>
+                </a>
+                <p id="heroHealth"></p>
+                <p id="heroArmor"></p>
+                <p id="heroShield"></p>
+                <p id="totalHP"></p>
+                <div id="abilities"></div>
+                <p id="perks"></p>
+                <p id="minorPerks"></p>
+                <p id="majorPerks"></p>
+                <!-- Move these above image, add abilities below image -->
+                
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="mapsSection">
+        <h2 class="title">Map Gallery</h2>
+
+        <div id=mapContainer>
+            <div id="mapListSide">
+                <form id="mapSearchForm">
+                    <h3>Search a Map:</h3>
+                    <input type="text" id="mapSearch">
+                    <input type="submit" id="mapSearchButton" class="gray-box" value="Search">
+                </form>
+
+                <div id="randomMap">
+                    <h3>Random Map</h3>
+                    <input type="button" id="mapRandomize" value="Randomize Map!">
+                </div>
+
+                <div id="mapList">
+                    <h3>Map List</h3>
+                    <input type="button" id="control" class="gray-box" value="Control">
+                    <input type="button" id="escort" class="gray-box" value="Escort">
+                    <input type="button" id="hybrid" class="gray-box" value="Hybrid">
+                    <input type="button" id="push" class="gray-box" value="Push">
+                    <input type="button" id="flashpoint" class="gray-box" value="Flashpoint">
+                    <input type="button" id="clash" class="gray-box" value="Clash">
+                    <input type="button" id="assault" class="gray-box" value="Assault">
+                    <input type="button" id="workshop" class="gray-box" value="Workshop">
+                    <ul id="maps"></ul>
+                </div>
+            </div>
+
+            <div id="mapInfoSide">
+
+                <h3 id="mapInfo">Map Information</h3>
+
+                <h4 id="mapName">Search for a map!</h4>
+                <p id="mapNotFound"></p>
+                <p id="mapLocation"></p>
+                <img id="mapImage">
+
+                <p id="mapGamemodes"></p>
+                
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
